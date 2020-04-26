@@ -1,0 +1,30 @@
+{
+  "name": "@lacussoft/eslint-config-standard",
+  "version": "1.0.0",
+  "description": "Base ESLint configuration for JavaScript projects",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "config",
+    "lacussoft",
+    "javascript"
+  ],
+  "author": {
+    "name": "Julio L. Muller",
+    "url": "https://github.com/juliolmuller"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airbnb/javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/airbnb/javascript/issues"
+  },
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}

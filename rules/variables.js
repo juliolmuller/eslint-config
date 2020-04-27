@@ -1,44 +1,46 @@
-const confusingBrowserGlobals = require('confusing-browser-globals');
-
 module.exports = {
-  rules: {
-    // enforce or disallow variable initializations at definition
-    'init-declarations': 'off',
 
-    // disallow the catch clause parameter name being the same as a variable in the outer scope
-    'no-catch-shadow': 'off',
+  // https://eslint.org/docs/rules/init-declarations
+  'init-declarations': 'off',
 
-    // disallow deletion of variables
-    'no-delete-var': 'error',
+  // https://eslint.org/docs/rules/no-catch-shadow
+  'no-catch-shadow': 'off',
 
-    // disallow labels that share a name with a variable
-    // https://eslint.org/docs/rules/no-label-var
-    'no-label-var': 'error',
+  // https://eslint.org/docs/rules/no-delete-var
+  'no-delete-var': 'error',
 
-    // disallow specific globals
-    'no-restricted-globals': ['error', 'isFinite', 'isNaN'].concat(confusingBrowserGlobals),
+  // https://eslint.org/docs/rules/no-label-var
+  'no-label-var': 'error',
 
-    // disallow declaration of variables already declared in the outer scope
-    'no-shadow': 'error',
+  // https://eslint.org/docs/rules/no-restricted-globals
+  'no-restricted-globals': ['error', 'isFinite', 'isNaN'],
 
-    // disallow shadowing of names such as arguments
-    'no-shadow-restricted-names': 'error',
+  // https://eslint.org/docs/rules/no-shadow
+  'no-shadow': 'error',
 
-    // disallow use of undeclared variables unless mentioned in a /*global */ block
-    'no-undef': 'error',
+  // https://eslint.org/docs/rules/no-shadow-restricted-names
+  'no-shadow-restricted-names': 'error',
 
-    // disallow use of undefined when initializing variables
-    'no-undef-init': 'error',
+  // https://eslint.org/docs/rules/no-undef
+  'no-undef': 'error',
 
-    // disallow use of undefined variable
-    // https://eslint.org/docs/rules/no-undefined
-    // TODO: enable?
-    'no-undefined': 'off',
+  // https://eslint.org/docs/rules/no-undef-init
+  'no-undef-init': 'error',
 
-    // disallow declaration of variables that are not used in the code
-    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+  // https://eslint.org/docs/rules/no-undefined
+  'no-undefined': 'off',
 
-    // disallow use of variables before they are defined
-    'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
-  }
-};
+  // https://eslint.org/docs/rules/no-unused-vars
+  'no-unused-vars': ['error', {
+    vars: 'all',
+    args: 'after-used',
+    ignoreRestSiblings: true,
+  }],
+
+  // https://eslint.org/docs/rules/no-use-before-define
+  'no-use-before-define': ['error', {
+    functions: true,
+    classes: true,
+    variables: true,
+  }],
+}

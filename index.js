@@ -1,5 +1,5 @@
-var allRules = require('./rules')
+/* eslint-disable global-require */
 
 module.exports = {
-  rules: allRules,
+  rules: require('./rules'),
 }

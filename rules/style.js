@@ -1,4 +1,5 @@
 /* eslint-disable no-magic-numbers */
+
 module.exports = {
 
   // enforce line breaks after opening and before closing array brackets
@@ -175,9 +176,8 @@ module.exports = {
     applyDefaultPatterns: true,
   }],
 
-  // disallow mixed 'LF' and 'CRLF' as linebreaks
   // https://eslint.org/docs/rules/linebreak-style
-  'linebreak-style': ['error', 'unix'],
+  'linebreak-style': ['error', 'windows'], // CRLF
 
   // require or disallow an empty line between class members
   // https://eslint.org/docs/rules/lines-between-class-members
@@ -196,14 +196,16 @@ module.exports = {
   // specify the maximum depth that blocks can be nested
   'max-depth': ['off', 4],
 
-  // specify the maximum length of a line in your program
   // https://eslint.org/docs/rules/max-len
-  'max-len': ['error', 100, 2, {
+  'max-len': ['error', {
+    code: 120,
+    tabWidth: 2,
     ignoreUrls: true,
     ignoreComments: false,
     ignoreRegExpLiterals: true,
     ignoreStrings: true,
     ignoreTemplateLiterals: true,
+    ignoreTrailingComments: true,
   }],
 
   // specify the max number of lines in a file
@@ -395,13 +397,12 @@ module.exports = {
   // require padding inside curly braces
   'object-curly-spacing': ['error', 'always'],
 
-  // enforce line breaks between braces
   // https://eslint.org/docs/rules/object-curly-newline
   'object-curly-newline': ['error', {
-    ObjectExpression: { minProperties: 4, multiline: true, consistent: true },
-    ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
-    ImportDeclaration: { minProperties: 4, multiline: true, consistent: true },
-    ExportDeclaration: { minProperties: 4, multiline: true, consistent: true },
+    ObjectExpression: { minProperties: 5, multiline: true, consistent: true },
+    ObjectPattern: { minProperties: 5, multiline: true, consistent: true },
+    ImportDeclaration: { minProperties: 5, multiline: true, consistent: true },
+    ExportDeclaration: { minProperties: 5, multiline: true, consistent: true },
   }],
 
   // enforce "same line" or "multiple line" on object properties.

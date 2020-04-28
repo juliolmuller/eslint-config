@@ -137,7 +137,7 @@ module.exports = {
   'no-loop-func': 'error',
 
   // https://eslint.org/docs/rules/no-magic-numbers
-  'no-magic-numbers': ['error', {
+  'no-magic-numbers': ['warn', {
     ignoreArrayIndexes: true,
     enforceConst: true,
     detectObjects: false,

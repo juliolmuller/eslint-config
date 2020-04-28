@@ -11,7 +11,7 @@ module.exports = {
   // https://eslint.org/docs/rules/arrow-spacing
   'arrow-spacing': ['error', {
     before: true,
-    after: true
+    after: true,
   }],
 
   // https://eslint.org/docs/rules/constructor-super
@@ -47,7 +47,7 @@ module.exports = {
   // https://eslint.org/docs/rules/no-restricted-imports
   'no-restricted-imports': ['off', {
     paths: [],
-    patterns: []
+    patterns: [],
   }],
 
   // https://eslint.org/docs/rules/no-this-before-super

@@ -21,7 +21,7 @@ module.exports = {
   'consistent-return': 'error',
 
   // https://eslint.org/docs/rules/curly
-  'curly': ['error', 'multi-or-nest', 'consistent'],
+  'curly': ['error', 'all'],
 
   // https://eslint.org/docs/rules/default-case
   'default-case': ['error', { commentPattern: '^no default$' }],
@@ -45,6 +45,7 @@ module.exports = {
   'guard-for-in': 'warn',
 
   // https://eslint.org/docs/rules/max-classes-per-file
+  // eslint-disable-next-line no-magic-numbers
   'max-classes-per-file': ['error', 1],
 
   // https://eslint.org/docs/rules/no-alert
@@ -67,10 +68,10 @@ module.exports = {
 
   // https://eslint.org/docs/rules/no-empty-function
   'no-empty-function': ['error', {
-    'allow': [
+    allow: [
       'arrowFunctions',
       'constructors',
-    ]
+    ],
   }],
 
   // https://eslint.org/docs/rules/no-empty-pattern
@@ -170,17 +171,7 @@ module.exports = {
 
   // https://eslint.org/docs/rules/no-param-reassign
   'no-param-reassign': ['error', {
-    props: true,
-    ignorePropertyModificationsFor: [
-      'acc',           // for reduce accumulators
-      'accumulator',   // for reduce accumulators
-      'req',           // for Express requests
-      'request',       // for Express requests
-      'res',           // for Express responses
-      'response',      // for Express responses
-      '$scope',        // for Angular 1 scopes
-      'staticContext', // for ReactRouter context
-    ],
+    props: false,
   }],
 
   // https://eslint.org/docs/rules/no-proto

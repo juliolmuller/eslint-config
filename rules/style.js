@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 module.exports = {
 
   // enforce line breaks after opening and before closing array brackets
@@ -21,7 +22,7 @@ module.exports = {
   'brace-style': ['error', '1tbs', { allowSingleLine: true }],
 
   // require camel case names
-  camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
+  'camelcase': ['error', { properties: 'never', ignoreDestructuring: false }],
 
   // enforce or disallow capitalization of the first letter of a comment
   // https://eslint.org/docs/rules/capitalized-comments
@@ -64,7 +65,7 @@ module.exports = {
       ObjectPattern: false,
       VariableDeclaration: false,
       NewExpression: false,
-    }
+    },
   }],
 
   // disallow padding inside computed properties
@@ -122,21 +123,21 @@ module.exports = {
 
   // this option sets a specific tab width for your code
   // https://eslint.org/docs/rules/indent
-  indent: ['error', 2, {
+  'indent': ['error', 2, {
     SwitchCase: 1,
     VariableDeclarator: 1,
     outerIIFEBody: 1,
     // MemberExpression: null,
     FunctionDeclaration: {
       parameters: 1,
-      body: 1
+      body: 1,
     },
     FunctionExpression: {
       parameters: 1,
-      body: 1
+      body: 1,
     },
     CallExpression: {
-      arguments: 1
+      arguments: 1,
     },
     ArrayExpression: 1,
     ObjectExpression: 1,
@@ -144,7 +145,7 @@ module.exports = {
     flatTernaryExpressions: false,
     // list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
     ignoredNodes: ['JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXFragment', 'JSXOpeningFragment', 'JSXClosingFragment', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild'],
-    ignoreComments: false
+    ignoreComments: false,
   }],
 
   // specify whether double or single quotes should be used in JSX attributes
@@ -161,8 +162,8 @@ module.exports = {
     overrides: {
       return: { after: true },
       throw: { after: true },
-      case: { after: true }
-    }
+      case: { after: true },
+    },
   }],
 
   // enforce position of line comments
@@ -210,7 +211,7 @@ module.exports = {
   'max-lines': ['off', {
     max: 300,
     skipBlankLines: true,
-    skipComments: true
+    skipComments: true,
   }],
 
   // enforce a maximum function length
@@ -301,7 +302,7 @@ module.exports = {
       ['==', '!=', '===', '!=='],
       ['&&', '||'],
     ],
-    allowSamePrecedence: false
+    allowSamePrecedence: false,
   }],
 
   // disallow mixed spaces and tabs for indentation
@@ -311,9 +312,12 @@ module.exports = {
   // https://eslint.org/docs/rules/no-multi-assign
   'no-multi-assign': ['error'],
 
-  // disallow multiple empty lines, only one newline at the end, and no new lines at the beginning
   // https://eslint.org/docs/rules/no-multiple-empty-lines
-  'no-multiple-empty-lines': ['error', { max: 2, maxBOF: 0, maxEOF: 0 }],
+  'no-multiple-empty-lines': ['error', {
+    max: 2,
+    maxBOF: 1,
+    maxEOF: 1,
+  }],
 
   // disallow negated conditions
   // https://eslint.org/docs/rules/no-negated-condition
@@ -421,14 +425,8 @@ module.exports = {
   // https://eslint.org/docs/rules/operator-linebreak
   'operator-linebreak': ['error', 'before', { overrides: { '=': 'none' } }],
 
-  // disallow padding within blocks
-  'padded-blocks': ['error', {
-    blocks: 'never',
-    classes: 'never',
-    switches: 'never',
-  }, {
-    allowSingleLineBlocks: true,
-  }],
+  // https://eslint.org/docs/rules/padded-blocks
+  'padded-blocks': 'off',
 
   // Require or disallow padding lines between statements
   // https://eslint.org/docs/rules/padding-line-between-statements
@@ -447,14 +445,14 @@ module.exports = {
   'quote-props': ['error', 'consistent-as-needed'],
 
   // https://eslint.org/docs/rules/quotes
-  quotes: ['error', 'single', { avoidEscape: true }],
+  'quotes': ['error', 'single', { avoidEscape: true }],
 
   // do not require jsdoc
   // https://eslint.org/docs/rules/require-jsdoc
   'require-jsdoc': 'off',
 
   // https://eslint.org/docs/rules/semi
-  semi: ['error', 'never'],
+  'semi': ['error', 'never'],
 
   // https://eslint.org/docs/rules/semi-spacing
   'semi-spacing': ['error', { before: false, after: true }],
@@ -476,7 +474,7 @@ module.exports = {
   'space-before-function-paren': ['error', {
     anonymous: 'always',
     named: 'never',
-    asyncArrow: 'always'
+    asyncArrow: 'always',
   }],
 
   // require or disallow spaces inside parentheses
@@ -505,7 +503,7 @@ module.exports = {
       exceptions: ['-', '+'],
       markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
       balanced: true,
-    }
+    },
   }],
 
   // Enforce spacing around colons of switch statements

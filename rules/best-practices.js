@@ -139,8 +139,9 @@ module.exports = {
   // https://eslint.org/docs/rules/no-magic-numbers
   'no-magic-numbers': ['warn', {
     ignoreArrayIndexes: true,
-    enforceConst: true,
     detectObjects: false,
+    enforceConst: true,
+    ignore: [0, 1, 2],
   }],
 
   // https://eslint.org/docs/rules/no-multi-spaces

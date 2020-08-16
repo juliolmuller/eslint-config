@@ -13,9 +13,7 @@ module.exports = {
   'complexity': ['off', { max: 10 }],
 
   // https://eslint.org/docs/rules/class-methods-use-this
-  'class-methods-use-this': ['error', {
-    exceptMethods: [],
-  }],
+  'class-methods-use-this': ['warn'],
 
   // https://eslint.org/docs/rules/consistent-return
   'consistent-return': 'error',
@@ -141,7 +139,7 @@ module.exports = {
     ignoreArrayIndexes: true,
     detectObjects: false,
     enforceConst: true,
-    ignore: [0, 1, 2],
+    ignore: [-1, 0, 1, 2],
   }],
 
   // https://eslint.org/docs/rules/no-multi-spaces

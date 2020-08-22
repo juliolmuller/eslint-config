@@ -47,7 +47,7 @@ module.exports = {
   'max-classes-per-file': ['error', 1],
 
   // https://eslint.org/docs/rules/no-alert
-  'no-alert': 'warn',
+  'no-alert': 'off',
 
   // https://eslint.org/docs/rules/no-caller
   'no-caller': 'error',
@@ -248,9 +248,9 @@ module.exports = {
 
   // https://eslint.org/docs/rules/no-unused-expressions
   'no-unused-expressions': ['error', {
-    allowShortCircuit: false,
-    allowTernary: false,
-    allowTaggedTemplates: false,
+    allowShortCircuit: true,
+    allowTernary: true,
+    allowTaggedTemplates: true,
   }],
 
   // https://eslint.org/docs/rules/no-unused-labels
@@ -298,7 +298,7 @@ module.exports = {
   'radix': 'error',
 
   // https://eslint.org/docs/rules/require-await
-  'require-await': 'error',
+  'require-await': 'warn',
 
   // https://eslint.org/docs/rules/require-unicode-regexp
   'require-unicode-regexp': 'off',

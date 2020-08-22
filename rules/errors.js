@@ -1,38 +1,35 @@
 module.exports = {
 
-  // Enforce “for” loop update clause moving the counter in the right direction
   // https://eslint.org/docs/rules/for-direction
   'for-direction': 'error',
 
-  // Enforces that a return statement is present in property getters
   // https://eslint.org/docs/rules/getter-return
   'getter-return': ['error', { allowImplicit: true }],
 
-  // disallow using an async function as a Promise executor
   // https://eslint.org/docs/rules/no-async-promise-executor
   'no-async-promise-executor': 'error',
 
-  // Disallow await inside of loops
   // https://eslint.org/docs/rules/no-await-in-loop
   'no-await-in-loop': 'error',
 
-  // Disallow comparisons to negative zero
   // https://eslint.org/docs/rules/no-compare-neg-zero
   'no-compare-neg-zero': 'error',
 
-  // disallow assignment in conditional expressions
+  // https://eslint.org/docs/rules/no-cond-assign
   'no-cond-assign': ['error', 'always'],
 
-  // disallow use of console
+  // https://eslint.org/docs/rules/no-console
   'no-console': 'warn',
 
-  // disallow use of constant expressions in conditions
-  'no-constant-condition': 'warn',
+  // https://eslint.org/docs/rules/no-constant-condition
+  'no-constant-condition': ['error', {
+    checkLoops: false,
+  }],
 
-  // disallow control characters in regular expressions
+  // https://eslint.org/docs/rules/no-control-regex
   'no-control-regex': 'error',
 
-  // disallow use of debugger
+  // https://eslint.org/docs/rules/no-debugger
   'no-debugger': 'error',
 
   // disallow duplicate arguments in functions
@@ -49,16 +46,15 @@ module.exports = {
   // disallow a duplicate case label.
   'no-duplicate-case': 'error',
 
-  // disallow empty statements
+  // https://eslint.org/docs/rules/no-empty
   'no-empty': 'error',
 
-  // disallow the use of empty character classes in regular expressions
+  // https://eslint.org/docs/rules/no-empty-character-class
   'no-empty-character-class': 'error',
 
-  // disallow assigning to the exception in a catch block
+  // https://eslint.org/docs/rules/no-ex-assign
   'no-ex-assign': 'error',
 
-  // disallow double-negation boolean casts in a boolean context
   // https://eslint.org/docs/rules/no-extra-boolean-cast
   'no-extra-boolean-cast': 'error',
 

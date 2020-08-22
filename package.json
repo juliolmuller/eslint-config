@@ -1,6 +1,6 @@
 {
   "name": "@lacussoft/eslint-config-standard",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Base ESLint configuration for JavaScript projects",
   "license": "MIT",
   "keywords": [
@@ -25,9 +25,9 @@
     "publish": "npm publish --access public"
   },
   "peerDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.7.0"
   },
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.7.0"
   }
 }

@@ -13,7 +13,7 @@ module.exports = {
   'no-label-var': 'error',
 
   // https://eslint.org/docs/rules/no-restricted-globals
-  'no-restricted-globals': ['error', 'isFinite', 'isNaN'],
+  'no-restricted-globals': ['error', 'isFinite'],
 
   // https://eslint.org/docs/rules/no-shadow
   'no-shadow': 'error',

@@ -4,16 +4,20 @@ module.exports = {
   'accessor-pairs': 'off',
 
   // https://eslint.org/docs/rules/array-callback-return
-  'array-callback-return': ['error', { allowImplicit: true }],
+  'array-callback-return': ['error', {
+    allowImplicit: true,
+  }],
 
   // https://eslint.org/docs/rules/block-scoped-var
   'block-scoped-var': 'error',
 
   // https://eslint.org/docs/rules/complexity
-  'complexity': ['off', { max: 10 }],
+  'complexity': ['off', {
+    max: 10,
+  }],
 
   // https://eslint.org/docs/rules/class-methods-use-this
-  'class-methods-use-this': ['warn'],
+  'class-methods-use-this': 'warn',
 
   // https://eslint.org/docs/rules/consistent-return
   'consistent-return': 'error',
@@ -22,13 +26,17 @@ module.exports = {
   'curly': ['error', 'all'],
 
   // https://eslint.org/docs/rules/default-case
-  'default-case': ['error', { commentPattern: '^no default$' }],
+  'default-case': ['error', {
+    commentPattern: '^no default$',
+  }],
 
   // https://eslint.org/docs/rules/default-param-last
   'default-param-last': 'warn',
 
   // https://eslint.org/docs/rules/dot-notation
-  'dot-notation': ['error', { allowKeywords: true }],
+  'dot-notation': ['error', {
+    allowKeywords: true,
+  }],
 
   // https://eslint.org/docs/rules/dot-location
   'dot-location': ['error', 'property'],
@@ -43,7 +51,6 @@ module.exports = {
   'guard-for-in': 'warn',
 
   // https://eslint.org/docs/rules/max-classes-per-file
-  // eslint-disable-next-line no-magic-numbers
   'max-classes-per-file': ['error', 1],
 
   // https://eslint.org/docs/rules/no-alert
@@ -139,7 +146,7 @@ module.exports = {
     ignoreArrayIndexes: true,
     detectObjects: false,
     enforceConst: true,
-    ignore: [-1, 0, 1, 2],
+    ignore: [-1, 0, 1, 2, 100, 1000],
   }],
 
   // https://eslint.org/docs/rules/no-multi-spaces
@@ -197,27 +204,11 @@ module.exports = {
     property: 'isFinite',
     message: 'Please use Number.isFinite instead',
   }, {
-    object: 'global',
-    property: 'isNaN',
-    message: 'Please use Number.isNaN instead',
-  }, {
-    object: 'self',
-    property: 'isNaN',
-    message: 'Please use Number.isNaN instead',
-  }, {
-    object: 'window',
-    property: 'isNaN',
-    message: 'Please use Number.isNaN instead',
-  }, {
     property: '__defineGetter__',
     message: 'Please use Object.defineProperty instead.',
   }, {
     property: '__defineSetter__',
     message: 'Please use Object.defineProperty instead.',
-  }, {
-    object: 'Math',
-    property: 'pow',
-    message: 'Use the exponentiation operator (**) instead.',
   }],
 
   // https://eslint.org/docs/rules/no-return-assign

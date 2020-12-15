@@ -41,11 +41,15 @@ module.exports = {
   // https://eslint.org/docs/rules/no-new-symbol
   'no-new-symbol': 'error',
 
-  // disallow specific imports
+  // https://eslint.org/docs/rules/no-restricted-imports
+  'no-restricted-exports': ['off', {
+    restrictedNamedExports: [],
+  }],
+
   // https://eslint.org/docs/rules/no-restricted-imports
   'no-restricted-imports': ['off', {
-    paths: [],
     patterns: [],
+    paths: [],
   }],
 
   // https://eslint.org/docs/rules/no-this-before-super

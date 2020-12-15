@@ -146,7 +146,7 @@ module.exports = {
     ignoreArrayIndexes: true,
     detectObjects: false,
     enforceConst: true,
-    ignore: [-1, 0, 1, 2, 100, 1000],
+    ignore: [-1, 0, 1, 2, 10, 100, 1000],
   }],
 
   // https://eslint.org/docs/rules/no-multi-spaces

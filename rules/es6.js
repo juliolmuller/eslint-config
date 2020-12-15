@@ -102,9 +102,6 @@ module.exports = {
   // https://eslint.org/docs/rules/prefer-numeric-literals
   'prefer-numeric-literals': 'error',
 
-  // https://eslint.org/docs/rules/prefer-reflect
-  'prefer-reflect': 'off',
-
   // https://eslint.org/docs/rules/prefer-rest-params
   'prefer-rest-params': 'error',
 

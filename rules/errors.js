@@ -118,17 +118,11 @@ module.exports = {
   // https://eslint.org/docs/rules/no-unsafe-negation
   'no-unsafe-negation': 'error',
 
-  // https://eslint.org/docs/rules/no-negated-in-lhs
-  'no-negated-in-lhs': 'off',
-
   // https://eslint.org/docs/rules/require-atomic-updates
   'require-atomic-updates': 'off',
 
   // https://eslint.org/docs/rules/use-isnan
   'use-isnan': 'error',
-
-  // https://eslint.org/docs/rules/valid-jsdoc
-  'valid-jsdoc': 'off',
 
   // https://eslint.org/docs/rules/valid-typeof
   'valid-typeof': ['error', {

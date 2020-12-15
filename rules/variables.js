@@ -3,9 +3,6 @@ module.exports = {
   // https://eslint.org/docs/rules/init-declarations
   'init-declarations': 'off',
 
-  // https://eslint.org/docs/rules/no-catch-shadow
-  'no-catch-shadow': 'off',
-
   // https://eslint.org/docs/rules/no-delete-var
   'no-delete-var': 'error',
 

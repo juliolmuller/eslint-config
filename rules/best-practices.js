@@ -106,9 +106,6 @@ module.exports = {
   // https://eslint.org/docs/rules/no-global-assign
   'no-global-assign': 'error',
 
-  // https://eslint.org/docs/rules/no-native-reassign
-  'no-native-reassign': 'error',
-
   // https://eslint.org/docs/rules/no-implicit-coercion
   'no-implicit-coercion': ['off', {
     boolean: true,

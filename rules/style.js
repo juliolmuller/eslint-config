@@ -106,8 +106,8 @@ module.exports = {
   // https://eslint.org/docs/rules/function-paren-newline
   'function-paren-newline': ['error', 'consistent'],
 
-  // https://eslint.org/docs/rules/id-blacklist
-  'id-blacklist': 'off',
+  // https://eslint.org/docs/rules/id-denylist
+  'id-denylist': 'off',
 
   // https://eslint.org/docs/rules/id-length
   'id-length': 'off',
@@ -182,12 +182,6 @@ module.exports = {
   // https://eslint.org/docs/rules/lines-around-comment
   'lines-around-comment': 'off',
 
-  // https://eslint.org/docs/rules/lines-around-directive
-  'lines-around-directive': ['error', {
-    before: 'always',
-    after: 'always',
-  }],
-
   // https://eslint.org/docs/rules/max-depth
   'max-depth': ['off', 4],
 
@@ -250,12 +244,6 @@ module.exports = {
 
   // https://eslint.org/docs/rules/new-parens
   'new-parens': 'error',
-
-  // https://eslint.org/docs/rules/newline-after-var
-  'newline-after-var': 'off',
-
-  // https://eslint.org/docs/rules/newline-before-return
-  'newline-before-return': 'off',
 
   // https://eslint.org/docs/rules/newline-per-chained-call
   'newline-per-chained-call': ['error', {
@@ -331,9 +319,6 @@ module.exports = {
     selector: 'WithStatement',
     message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
   }],
-
-  // https://eslint.org/docs/rules/no-spaced-func
-  'no-spaced-func': 'error',
 
   // https://eslint.org/docs/rules/no-tabs
   'no-tabs': 'error',
@@ -433,9 +418,6 @@ module.exports = {
   'quotes': ['error', 'single', {
     avoidEscape: true,
   }],
-
-  // https://eslint.org/docs/rules/require-jsdoc
-  'require-jsdoc': 'off',
 
   // https://eslint.org/docs/rules/semi
   'semi': ['error', 'never'],

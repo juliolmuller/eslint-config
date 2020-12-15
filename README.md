@@ -1,5 +1,17 @@
-# LacusSoft :: eslint-config-standard
+# LacusSoft :: eslint-config
 
-[![npm version](https://img.shields.io/npm/v/@lacussoft/eslint-config-standard.svg)](https://www.npmjs.com/package/@lacussoft/eslint-config-standard)
+<p>
+  <img src="https://img.shields.io/npm/v/@lacussoft/eslint-config" alt="NPM Latest Version" />
 
-This package provides LacuSoft's base JS .eslintrc as an extensible shared config.
+  <img src="https://img.shields.io/npm/dependency-version/@lacussoft/eslint-config/peer/eslint" alt="Minimum ESlint version" />
+
+  <img src="https://img.shields.io/github/last-commit/juliolmuller/eslint-config?" alt="Last Update Date" />
+
+  <img src="https://img.shields.io/github/license/juliolmuller/eslint-config" alt="Project License" />
+</p>
+
+This package provides LacuSoft's base JS .eslintrc as extensible linting rules.
+
+```bash
+$ npm install -D eslint @lacussoft/eslint-config
+```

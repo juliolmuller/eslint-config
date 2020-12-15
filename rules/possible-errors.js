@@ -131,6 +131,9 @@ module.exports = {
   // https://eslint.org/docs/rules/no-unsafe-optional-chaining
   // 'no-unsafe-optional-chaining': 'error',
 
+  // https://eslint.org/docs/rules/no-useless-backreference
+  'no-useless-backreference': 'error',
+
   // https://eslint.org/docs/rules/require-atomic-updates
   'require-atomic-updates': 'off',
 

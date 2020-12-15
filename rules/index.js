@@ -1,15 +1,15 @@
-var bestPractices = require('./best-practices')
-var variables = require('./variables')
-var errors = require('./errors')
-var style = require('./style')
-var node = require('./node')
-var es6 = require('./es6')
+const bestPractices = require('./best-practices')
+const variables = require('./variables')
+const errors = require('./errors')
+const style = require('./style')
+const node = require('./node')
+const es6 = require('./es6')
 
-module.exports = Object.assign({},
-  bestPractices,
-  variables,
-  errors,
-  style,
-  node,
-  es6,
-)
+module.exports = {
+  ...bestPractices,
+  ...variables,
+  ...errors,
+  ...style,
+  ...node,
+  ...es6,
+}

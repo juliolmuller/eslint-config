@@ -1,5 +1,3 @@
-/* eslint-disable global-require */
+const rules = require('./rules')
 
-module.exports = {
-  rules: require('./rules'),
-}
+module.exports = { rules }

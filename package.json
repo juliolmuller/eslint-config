@@ -1,6 +1,6 @@
 {
   "name": "@lacussoft/eslint-config-standard",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Base ESLint configuration for JavaScript projects",
   "license": "MIT",
   "keywords": [

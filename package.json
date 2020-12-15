@@ -1,13 +1,14 @@
 {
-  "name": "@lacussoft/eslint-config-standard",
-  "version": "1.0.10",
+  "name": "@lacussoft/eslint-config",
+  "version": "1.0.0",
   "description": "Base ESLint configuration for JavaScript projects",
   "license": "MIT",
   "keywords": [
+    "linting",
     "eslint",
     "config",
-    "lacussoft",
-    "javascript"
+    "javascript",
+    "lacussoft"
   ],
   "author": {
     "name": "Julio L. Muller",

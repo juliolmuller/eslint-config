@@ -85,6 +85,9 @@ module.exports = {
   // https://eslint.org/docs/rules/no-irregular-whitespace
   'no-irregular-whitespace': 'error',
 
+  // https://eslint.org/docs/rules/no-loss-of-precision
+  'no-loss-of-precision': 'error',
+
   // https://eslint.org/docs/rules/no-misleading-character-class
   'no-misleading-character-class': 'error',
 

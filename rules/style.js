@@ -414,7 +414,11 @@ module.exports = {
   'padded-blocks': 'off',
 
   // https://eslint.org/docs/rules/padding-line-between-statements
-  'padding-line-between-statements': 'off',
+  'padding-line-between-statements': [
+    'error',
+    { blankLine: 'always', prev: ['const', 'let', 'block', 'block-like'], next: 'return' },
+    { blankLine: 'always', prev: 'break', next: ['case', 'default'] },
+  ],
 
   // https://eslint.org/docs/rules/prefer-exponentiation-operator
   'prefer-exponentiation-operator': 'off',

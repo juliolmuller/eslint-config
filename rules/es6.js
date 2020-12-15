@@ -1,9 +1,7 @@
 module.exports = {
 
   // https://eslint.org/docs/rules/arrow-body-style
-  'arrow-body-style': ['error', 'as-needed', {
-    requireReturnForObjectLiteral: false,
-  }],
+  'arrow-body-style': 'off',
 
   // https://eslint.org/docs/rules/arrow-parens
   'arrow-parens': ['error', 'always'],

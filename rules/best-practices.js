@@ -30,6 +30,9 @@ module.exports = {
     commentPattern: '^no default$',
   }],
 
+  // https://eslint.org/docs/rules/default-case-last
+  'default-case-last': 'error',
+
   // https://eslint.org/docs/rules/default-param-last
   'default-param-last': 'warn',
 

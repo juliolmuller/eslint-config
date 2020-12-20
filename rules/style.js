@@ -176,7 +176,7 @@ module.exports = {
 
   // https://eslint.org/docs/rules/lines-between-class-members
   'lines-between-class-members': ['error', 'always', {
-    exceptAfterSingleLine: false,
+    exceptAfterSingleLine: true,
   }],
 
   // https://eslint.org/docs/rules/lines-around-comment

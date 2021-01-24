@@ -127,9 +127,8 @@ module.exports = {
   // https://eslint.org/docs/rules/no-unsafe-negation
   'no-unsafe-negation': 'error',
 
-  // FUTURE: added in ESlint v7.15
   // https://eslint.org/docs/rules/no-unsafe-optional-chaining
-  // 'no-unsafe-optional-chaining': 'error',
+  'no-unsafe-optional-chaining': 'error',
 
   // https://eslint.org/docs/rules/no-useless-backreference
   'no-useless-backreference': 'error',

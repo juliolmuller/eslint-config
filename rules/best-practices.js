@@ -169,6 +169,9 @@ module.exports = {
   // https://eslint.org/docs/rules/no-new-wrappers
   'no-new-wrappers': 'error',
 
+  // https://eslint.org/docs/rules/no-nonoctal-decimal-escape
+  'no-nonoctal-decimal-escape': 'error',
+
   // https://eslint.org/docs/rules/no-octal
   'no-octal': 'warn',
 

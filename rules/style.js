@@ -101,7 +101,9 @@ module.exports = {
   }],
 
   // https://eslint.org/docs/rules/func-style
-  'func-style': ['error', 'expression'],
+  'func-style': ['error', 'declaration', {
+    allowArrowFunctions: true
+  }]
 
   // https://eslint.org/docs/rules/function-paren-newline
   'function-paren-newline': ['error', 'consistent'],

@@ -269,10 +269,7 @@ module.exports = {
   'no-void': 'error',
 
   // https://eslint.org/docs/rules/no-warning-comments
-  'no-warning-comments': ['warn', {
-    terms: ['todo', 'fixme', 'xxx'],
-    location: 'start',
-  }],
+  'no-warning-comments': 'off',
 
   // https://eslint.org/docs/rules/no-with
   'no-with': 'error',

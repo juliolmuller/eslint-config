@@ -355,28 +355,7 @@ module.exports = {
   'object-curly-spacing': ['error', 'always'],
 
   // https://eslint.org/docs/rules/object-curly-newline
-  'object-curly-newline': ['error', {
-    ObjectExpression: {
-      minProperties: 5,
-      multiline: true,
-      consistent: true,
-    },
-    ObjectPattern: {
-      minProperties: 5,
-      multiline: true,
-      consistent: true,
-    },
-    ImportDeclaration: {
-      minProperties: 5,
-      multiline: true,
-      consistent: true,
-    },
-    ExportDeclaration: {
-      minProperties: 5,
-      multiline: true,
-      consistent: true,
-    },
-  }],
+  'object-curly-newline': 'off',
 
   // https://eslint.org/docs/rules/object-property-newline
   'object-property-newline': ['error', {

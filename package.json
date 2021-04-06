@@ -22,9 +22,6 @@
     "url": "https://github.com/airbnb/javascript/issues"
   },
   "main": "index.js",
-  "scripts": {
-    "publish": "npm publish --access public"
-  },
   "peerDependencies": {
     "eslint": ">=7.15.0"
   },

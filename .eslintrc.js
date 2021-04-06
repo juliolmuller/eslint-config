@@ -1,10 +1,11 @@
-const rules = require('./rules')
+const config = require('./index')
 
 module.exports = {
   root: true,
   env: {
     node: true,
+    amd: true,
     es6: true,
   },
-  rules,
+  ...config,
 }

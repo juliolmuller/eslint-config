@@ -1,3 +1,10 @@
+const plugins = require('./plugins')
 const rules = require('./rules')
 
-module.exports = { rules }
+module.exports = {
+  parserOptions: {
+    ecmaVersion: 2018,
+  },
+  plugins,
+  rules,
+}

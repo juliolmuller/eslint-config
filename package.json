@@ -28,7 +28,10 @@
   "peerDependencies": {
     "eslint": ">=7.15.0"
   },
+  "dependencies": {
+    "eslint-plugin-import": "^2.22.1"
+  },
   "devDependencies": {
-    "eslint": "^7.18.0"
+    "eslint": "^7.23.0"
   }
 }

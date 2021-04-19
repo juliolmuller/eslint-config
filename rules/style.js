@@ -102,7 +102,7 @@ module.exports = {
 
   // https://eslint.org/docs/rules/func-style
   'func-style': ['error', 'declaration', {
-    allowArrowFunctions: true
+    allowArrowFunctions: true,
   }],
 
   // https://eslint.org/docs/rules/function-paren-newline
@@ -174,7 +174,10 @@ module.exports = {
   }],
 
   // https://eslint.org/docs/rules/linebreak-style
-  'linebreak-style': ['error', 'windows'], // CRLF
+  'linebreak-style': ['error', process.platform === 'win32'
+    ? 'windows' // CRLF (\r\n)
+    : 'unix',   // LF   (\n)
+  ],
 
   // https://eslint.org/docs/rules/lines-between-class-members
   'lines-between-class-members': ['error', 'always', {

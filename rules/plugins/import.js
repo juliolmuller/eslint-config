@@ -1,4 +1,5 @@
-module.exports = {
+// Remove "{} ||" to enable content export
+module.exports = {} || {
 
   // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/default.md
   'default': 'error',

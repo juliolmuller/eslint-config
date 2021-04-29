@@ -1,0 +1,41 @@
+{
+  "name": "@lacussoft/eslint-config-typescript",
+  "version": "1.0.4",
+  "description": "Base ESLint configuration for TypeScript projects",
+  "license": "MIT",
+  "keywords": [
+    "linting",
+    "eslint",
+    "config",
+    "javascript",
+    "typescript",
+    "lacussoft"
+  ],
+  "author": {
+    "name": "Julio L. Muller",
+    "url": "https://github.com/juliolmuller"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airbnb/javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/airbnb/javascript/issues"
+  },
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.15.0",
+    "typescript": ">=4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0"
+  },
+  "dependencies": {
+    "@lacussoft/eslint-config": "^1.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0"
+  }
+}

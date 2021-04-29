@@ -6,6 +6,6 @@ module.exports = {
     es6: true,
   },
   extends: [
-    './packages/standard/index',
+    '@lacussoft',
   ],
 }

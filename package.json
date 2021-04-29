@@ -1,37 +1,12 @@
 {
-  "name": "@lacussoft/eslint-config",
-  "version": "1.1.1",
-  "description": "Base ESLint configuration for JavaScript projects",
+  "name": "@lacussoft/eslint",
+  "private": true,
   "license": "MIT",
-  "keywords": [
-    "linting",
-    "eslint",
-    "config",
-    "javascript",
-    "lacussoft"
+  "author": "Julio L. Muller",
+  "workspaces": [
+    "packages/*"
   ],
-  "author": {
-    "name": "Julio L. Muller",
-    "url": "https://github.com/juliolmuller"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/airbnb/javascript"
-  },
-  "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
-  },
-  "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
-  "peerDependencies": {
-    "eslint": ">=7.15.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.24.0"
-  },
-  "dependencies": {
-    "eslint-plugin-import": "^2.22.1"
+  "scripts": {
+    "prepublishOnly": "node -e \"throw 'Inform the workspace you want to publish.'\""
   }
 }

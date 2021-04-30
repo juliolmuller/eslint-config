@@ -1,0 +1,40 @@
+{
+  "name": "@lacussoft/eslint-config-react",
+  "version": "1.0.0",
+  "description": "Base ESLint configuration for React projects",
+  "license": "MIT",
+  "keywords": [
+    "linting",
+    "eslint",
+    "config",
+    "javascript",
+    "react",
+    "jsx"
+  ],
+  "author": {
+    "name": "Julio L. Muller",
+    "url": "https://github.com/juliolmuller"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliolmuller/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/juliolmuller/eslint-config/issues"
+  },
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0"
+  },
+  "dependencies": {
+    "@lacussoft/eslint-config": "^1.1.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}

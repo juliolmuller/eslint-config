@@ -7,9 +7,9 @@
 
   <img src="https://img.shields.io/npm/dm/@lacussoft/eslint-config-typescript.svg?style=flat-square" alt="Downloads Count" />
 
-  <img src="https://img.shields.io/github/last-commit/juliolmuller/eslint-config-typescript?" alt="Last Update Date" />
+  <img src="https://img.shields.io/github/last-commit/juliolmuller/eslint-config?" alt="Last Update Date" />
 
-  <img src="https://img.shields.io/github/license/juliolmuller/eslint-config-typescript" alt="Project License" />
+  <img src="https://img.shields.io/github/license/juliolmuller/eslint-config" alt="Project License" />
 </p>
 
 This package provides LacuSoft's base JS/TS .eslintrc as extensible linting rules.

@@ -48,6 +48,11 @@ module.exports = {
     allowReferrer: false,
   }],
 
+  // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react/jsx-no-undef.md
+  'react/jsx-no-undef': ['error', {
+    allowGlobals: true,
+  }],
+
   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
   'jsx-props-no-spreading': 'off',
 

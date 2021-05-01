@@ -5,8 +5,5 @@
   "author": "Julio L. Muller",
   "workspaces": [
     "packages/*"
-  ],
-  "scripts": {
-    "prepublishOnly": "node -e \"throw 'Inform the workspace you want to publish.'\""
-  }
+  ]
 }

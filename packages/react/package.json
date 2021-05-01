@@ -29,11 +29,8 @@
   "peerDependencies": {
     "eslint": ">=7.15.0"
   },
-  "devDependencies": {
-    "eslint": "^7.25.0"
-  },
   "dependencies": {
-    "@lacussoft/eslint-config": "^1.1.1",
+    "@lacussoft/eslint-config": "^1.1.2",
     "eslint-plugin-jsx-control-statements": "^2.2.1",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0"

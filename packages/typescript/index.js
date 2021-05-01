@@ -1,4 +1,3 @@
-const plugins = require('./plugins')
 const rules = require('./rules')
 
 module.exports = {
@@ -11,6 +10,8 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 2021,
   },
-  plugins,
+  plugins: [
+    '@typescript-eslint', // https://github.com/typescript-eslint/typescript-eslint
+  ],
   rules,
 }

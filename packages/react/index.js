@@ -1,4 +1,3 @@
-const plugins = require('./plugins')
 const rules = require('./rules')
 
 module.exports = {
@@ -15,6 +14,10 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins,
+  plugins: [
+    'react', // https://github.com/yannickcr/eslint-plugin-react
+    'react-hooks', // https://www.npmjs.com/package/eslint-plugin-react-hooks
+    'jsx-control-statements', // https://www.npmjs.com/package/eslint-plugin-jsx-control-statements
+  ],
   rules,
 }

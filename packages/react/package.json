@@ -1,6 +1,6 @@
 {
   "name": "@lacussoft/eslint-config-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Base ESLint configuration for React projects",
   "license": "MIT",
   "keywords": [
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@lacussoft/eslint-config": "^1.1.1",
+    "eslint-plugin-jsx-control-statements": "^2.2.1",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0"
   }

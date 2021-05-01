@@ -6,6 +6,7 @@ module.exports = {
     '@lacussoft',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:jsx-control-statements/recommended',
   ],
   parserOptions: {
     sourceType: 'module',

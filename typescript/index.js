@@ -2,7 +2,6 @@ const rules = require('./rules')
 
 module.exports = {
   extends: [
-    '@lacussoft',
     'plugin:@typescript-eslint/recommended',
   ],
   parserOptions: {

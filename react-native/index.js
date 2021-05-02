@@ -2,7 +2,7 @@ const rules = require('./rules')
 
 module.exports = {
   extends: [
-    '@lacussoft/react',
+    '../react',
     'plugin:react-native/all',
   ],
   plugins: [

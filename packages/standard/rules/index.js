@@ -13,7 +13,7 @@ const prefixKeys = (object, prefix) => {
 }
 
 const pluginsRules = {
-  ...prefixKeys(importRules, 'import')
+  ...prefixKeys(importRules, 'import'),
 }
 
 module.exports = {

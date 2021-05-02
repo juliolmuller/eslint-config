@@ -1,5 +1,3 @@
-const config = require('./index')
-
 module.exports = {
   root: true,
   env: {
@@ -7,5 +5,7 @@ module.exports = {
     amd: true,
     es6: true,
   },
-  ...config,
+  extends: [
+    './packages/standard/index',
+  ],
 }

@@ -35,10 +35,15 @@ For React projects using JSX.
   <img src="https://img.shields.io/npm/dm/@lacussoft/eslint-config-react.svg?style=flat-square" alt="Downloads Count" />
 </p>
 
-## [eslint-config-react-typescript](./packages/react-typescript)
+## [eslint-config-react-native](./packages/react-native)
 
-<!-- For React projects using JSX and TypeScript. -->
-*Coming soon...*
+For React projects using React Native.
+
+<p>
+  <img src="https://img.shields.io/npm/v/@lacussoft/eslint-config-react-native" alt="NPM Latest Version" />
+  <img src="https://img.shields.io/npm/dependency-version/@lacussoft/eslint-config-react-native/peer/eslint" alt="Minimum ESlint version" />
+  <img src="https://img.shields.io/npm/dm/@lacussoft/eslint-config-react-native.svg?style=flat-square" alt="Downloads Count" />
+</p>
 
 ## [eslint-config-vue](./packages/vue)
 

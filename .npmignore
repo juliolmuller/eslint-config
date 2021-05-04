@@ -1,2 +1,5 @@
 .eslintrc*
 .gitignore
+
+*.spec.js
+*.test.js

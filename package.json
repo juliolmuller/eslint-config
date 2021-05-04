@@ -24,11 +24,15 @@
     "url": "https://github.com/juliolmuller/eslint-config/issues"
   },
   "main": "standard/index.js",
+  "scripts": {
+    "test": "jest --bail"
+  },
   "peerDependencies": {
     "eslint": ">=7.15.0"
   },
   "devDependencies": {
-    "eslint": "^7.24.0"
+    "eslint": "^7.24.0",
+    "jest": "^26.6.3"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.0",

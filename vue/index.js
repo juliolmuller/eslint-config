@@ -1,3 +1,1 @@
-module.exports = {
-  extends: '/.v2',
-}
+module.exports = require('./v2')

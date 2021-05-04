@@ -4,7 +4,6 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:jsx-control-statements/recommended',
   ],
   parserOptions: {
     sourceType: 'module',

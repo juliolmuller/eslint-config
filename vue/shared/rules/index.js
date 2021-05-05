@@ -1,5 +1,4 @@
 const vueRules = require('./plugins/vue')
-const sharedRules = require('../../shared/rules')
 const overrides = require('./overrides')
 
 const prefixRules = (prefix, rules) => {
@@ -14,7 +13,6 @@ const pluginsRules = {
 }
 
 module.exports = {
-  ...sharedRules,
   ...pluginsRules,
   ...overrides, // <<< MUST BE THE LAST ONE
 }

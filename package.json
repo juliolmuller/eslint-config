@@ -25,6 +25,7 @@
   },
   "main": "standard/index.js",
   "scripts": {
+    "prepublishOnly": "npm test",
     "test": "jest --bail"
   },
   "peerDependencies": {

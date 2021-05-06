@@ -4,7 +4,6 @@
 const eslintRulesOriginal = require('eslint/lib/rules')
 const reactRulesOriginal = require('eslint-plugin-react').rules
 const reactHooksRulesOriginal = require('eslint-plugin-react-hooks').rules
-const jsxControlStmtRulesOriginal = require('eslint-plugin-jsx-control-statements').rules
 const configFile = require('../react')
 
 describe('Check overall configuration', () => {
@@ -79,21 +78,6 @@ describe('Check React Hooks rules', () => {
 
   it('There are 2 rules configured', () => {
     expect(configRulesName.length).toBe(2)
-  })
-
-  configRulesName.forEach((rule) => {
-    it(`Rule "${rule}" exists`, () => {
-      expect(originalRulesName).toContain(rule)
-    })
-  })
-})
-
-describe('Check JSX Control Statements rules', () => {
-  const originalRulesName = Object.keys(jsxControlStmtRulesOriginal).map((rule) => `jsx-control-statements/${rule}`)
-  const configRulesName = Object.keys(configFile.rules).filter((key) => key.match(/^jsx-control-statements\//))
-
-  it('There are 0 rules configured', () => {
-    expect(configRulesName.length).toBe(0)
   })
 
   configRulesName.forEach((rule) => {

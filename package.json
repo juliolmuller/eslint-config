@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lacussoft",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base ESLint configuration for JavaScript, TypeScript, React, React Native & Vue projects, by LacusSoft",
   "license": "MIT",
   "keywords": [
@@ -39,7 +39,6 @@
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-control-statements": "^2.2.1",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-native": "^3.10.0",

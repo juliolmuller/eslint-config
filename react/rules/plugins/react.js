@@ -20,6 +20,7 @@ module.exports = {
 
   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
   'jsx-filename-extension': [1, {
+    extensions: ['.jsx', '.tsx'],
     allow: 'as-needed',
   }],
 
@@ -55,6 +56,9 @@ module.exports = {
 
   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
   'jsx-props-no-spreading': 'off',
+
+  // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+  'prop-types': 'off',
 
   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
   'react-in-jsx-scope': 'off',

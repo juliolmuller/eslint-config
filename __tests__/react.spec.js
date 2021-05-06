@@ -63,7 +63,7 @@ describe('Check React rules', () => {
   const configRulesName = Object.keys(configFile.rules).filter((key) => key.match(/^react\//))
 
   it('There are 13 rules configured', () => {
-    expect(configRulesName.length).toBe(13)
+    expect(configRulesName.length).toBe(14)
   })
 
   configRulesName.forEach((rule) => {

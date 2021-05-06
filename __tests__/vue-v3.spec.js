@@ -41,8 +41,8 @@ describe('Check Vue rules', () => {
   const originalRulesName = Object.keys(tsRulesOriginal).map((rule) => `vue/${rule}`)
   const configRulesName = Object.keys(configFile.rules).filter((key) => key.match(/^vue\//))
 
-  it('There are 0 rules configured', () => {
-    expect(configRulesName.length).toBe(0)
+  it('There are 9 rules configured', () => {
+    expect(configRulesName.length).toBe(9)
   })
 
   configRulesName.forEach((rule) => {

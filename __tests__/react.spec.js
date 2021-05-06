@@ -30,6 +30,12 @@ describe('Check overall configuration', () => {
     expect(configFile.parserOptions.ecmaFeatures.jsx).toBe(true)
   })
 
+  it('It configures React version detection', () => {
+    expect(configFile.settings).toHaveProperty('react')
+    expect(configFile.settings.react).toHaveProperty('version')
+    expect(configFile.settings.react.version).toBe('detect')
+  })
+
   it('It does not configure a parser', () => {
     expect(configFile.parserOptions).not.toHaveProperty('parser')
     expect(configFile).not.toHaveProperty('parser')

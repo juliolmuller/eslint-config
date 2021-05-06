@@ -17,4 +17,9 @@ module.exports = {
     'react-hooks',            // https://www.npmjs.com/package/eslint-plugin-react-hooks
   ],
   rules,
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 }

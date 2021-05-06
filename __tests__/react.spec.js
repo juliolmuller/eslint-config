@@ -35,8 +35,8 @@ describe('Check overall configuration', () => {
     expect(configFile).not.toHaveProperty('parser')
   })
 
-  it('It configures plugins: ["react", "react-hooks", "jsx-control-statements"]', () => {
-    const expectedPlugins = ['react', 'react-hooks', 'jsx-control-statements']
+  it('It configures plugins: ["react", "react-hooks"', () => {
+    const expectedPlugins = ['react', 'react-hooks']
 
     expect(configFile.plugins).toEqual(expect.arrayContaining(expectedPlugins))
   })

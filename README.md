@@ -1,51 +1,104 @@
-# LacusSoft Linting Presets
+# ESlint Configuration Presets - by LacusSoft
 
 <p>
+  <img src="https://img.shields.io/npm/v/eslint-config-lacussoft" alt="NPM Latest Version" />
+
+  <img src="https://img.shields.io/npm/dependency-version/eslint-config-lacussoft/peer/eslint" alt="Minimum ESlint version" />
+
+  <img src="https://img.shields.io/npm/dm/eslint-config-lacussoft.svg?style=flat-square" alt="Downloads Count" />
+
   <img src="https://img.shields.io/github/last-commit/juliolmuller/eslint-config?" alt="Last Update Date" />
+
   <img src="https://img.shields.io/github/license/juliolmuller/eslint-config" alt="Project License" />
 </p>
 
-## [eslint-config](./packages/standard)
+This package provides LacuSoft's base linting configurations for ESlint, in JavaScript projects environments.
 
-For vanilla JavaScript projects.
+```bash
+$ npm install -D eslint eslint-config-lacussoft
+```
 
-<p>
-  <img src="https://img.shields.io/npm/v/@lacussoft/eslint-config" alt="NPM Latest Version" />
-  <img src="https://img.shields.io/npm/dependency-version/@lacussoft/eslint-config/peer/eslint" alt="Minimum ESlint version" />
-  <img src="https://img.shields.io/npm/dm/@lacussoft/eslint-config.svg?style=flat-square" alt="Downloads Count" />
-</p>
+## Standard preset
 
-## [eslint-config-typescript](./packages/typescript)
+For vanilla JavaScript projects:
 
-For TypeScript projects.
+```json
+// .eslintrc file
+{
+  "extends": [
+    "lacussoft"
+  ]
+}
+```
 
-<p>
-  <img src="https://img.shields.io/npm/v/@lacussoft/eslint-config-typescript" alt="NPM Latest Version" />
-  <img src="https://img.shields.io/npm/dependency-version/@lacussoft/eslint-config-typescript/peer/eslint" alt="Minimum ESlint version" />
-  <img src="https://img.shields.io/npm/dm/@lacussoft/eslint-config-typescript.svg?style=flat-square" alt="Downloads Count" />
-</p>
+## TypeScript preset
 
-## [eslint-config-react](./packages/react)
+For TypeScript projects:
 
-For React projects using JSX.
+```json
+// .eslintrc file
+{
+  "extends": [
+    "lacussoft", // optional
+    "lacussoft/typescript"
+  ]
+}
+```
 
-<p>
-  <img src="https://img.shields.io/npm/v/@lacussoft/eslint-config-react" alt="NPM Latest Version" />
-  <img src="https://img.shields.io/npm/dependency-version/@lacussoft/eslint-config-react/peer/eslint" alt="Minimum ESlint version" />
-  <img src="https://img.shields.io/npm/dm/@lacussoft/eslint-config-react.svg?style=flat-square" alt="Downloads Count" />
-</p>
+## React preset
 
-## [eslint-config-react-native](./packages/react-native)
+For React projects using React and JSX syntax:
 
-For React projects using React Native.
+```json
+// .eslintrc file
+{
+  "extends": [
+    "lacussoft",            // optional
+    "lacussoft/typescript", // optional (if using TypeScript)
+    "lacussoft/react"
+  ]
+}
+```
 
-<p>
-  <img src="https://img.shields.io/npm/v/@lacussoft/eslint-config-react-native" alt="NPM Latest Version" />
-  <img src="https://img.shields.io/npm/dependency-version/@lacussoft/eslint-config-react-native/peer/eslint" alt="Minimum ESlint version" />
-  <img src="https://img.shields.io/npm/dm/@lacussoft/eslint-config-react-native.svg?style=flat-square" alt="Downloads Count" />
-</p>
+## React Native preset
 
-## [eslint-config-vue](./packages/vue)
+For React projects using React Native (it extends all configuration from the `react` preset):
 
-<!-- For Vue projects. -->
-*Coming soon...*
+```json
+// .eslintrc file
+{
+  "extends": [
+    "lacussoft",            // optional
+    "lacussoft/typescript", // optional (if using TypeScript)
+    "lacussoft/react-native"
+  ]
+}
+```
+
+## Vue preset
+
+For Vue 3 (default) projects:
+
+```json
+// .eslintrc file
+{
+  "extends": [
+    "lacussoft",            // optional
+    "lacussoft/typescript", // optional (if using TypeScript)
+    "lacussoft/vue"
+  ]
+}
+```
+
+...or if using Vue 2:
+
+```json
+// .eslintrc file
+{
+  "extends": [
+    "lacussoft",            // optional
+    "lacussoft/typescript", // optional (if using TypeScript)
+    "lacussoft/vue/v2"
+  ]
+}
+```

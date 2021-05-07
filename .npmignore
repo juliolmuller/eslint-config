@@ -1,0 +1,8 @@
+__tests__/
+no_modules/
+
+.eslintrc*
+.gitignore
+
+*.spec.js
+*.test.js

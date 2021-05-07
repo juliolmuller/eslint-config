@@ -5,7 +5,5 @@ module.exports = {
     amd: true,
     es6: true,
   },
-  extends: [
-    './packages/standard/index',
-  ],
+  extends: './standard',
 }

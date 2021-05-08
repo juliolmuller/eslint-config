@@ -87,6 +87,9 @@ module.exports = {
     ],
   }],
 
+  // https://eslint.vuejs.org/rules/require-name-property.html
+  'require-name-property': 'error',
+
   // https://eslint.vuejs.org/rules/script-indent.html
   'script-indent': ['error', 2, {
     baseIndent: 0,

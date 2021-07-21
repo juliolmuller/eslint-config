@@ -174,10 +174,7 @@ module.exports = {
   }],
 
   // https://eslint.org/docs/rules/linebreak-style
-  'linebreak-style': ['error', process.platform === 'win32'
-    ? 'windows' // CRLF (\r\n)
-    : 'unix',   // LF   (\n)
-  ],
+  'linebreak-style': ['error', 'unix'],
 
   // https://eslint.org/docs/rules/lines-between-class-members
   'lines-between-class-members': ['error', 'always', {

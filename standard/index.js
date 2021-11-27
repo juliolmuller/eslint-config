@@ -9,6 +9,7 @@ module.exports = {
   },
   plugins: [
     'import', // https://github.com/benmosher/eslint-plugin-import
+    'import-helpers', // https://github.com/Tibfib/eslint-plugin-import-helpers
   ],
   rules,
 }

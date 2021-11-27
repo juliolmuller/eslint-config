@@ -3,6 +3,7 @@
 
 const eslintRulesOriginal = require('eslint/lib/rules')
 const importRulesOriginal = require('eslint-plugin-import').rules
+const importHelpersRulesOriginal = require('eslint-plugin-import-helpers').rules
 const configFile = require('../standard')
 
 describe('Check overall configuration', () => {
@@ -19,8 +20,8 @@ describe('Check overall configuration', () => {
     expect(configFile).not.toHaveProperty('parser')
   })
 
-  it('It configures plugins: ["import"]', () => {
-    const expectedPlugins = ['import']
+  it('It configures plugins: ["import", "import-helpers"]', () => {
+    const expectedPlugins = ['import', 'import-helpers']
 
     expect(configFile.plugins).toEqual(expect.arrayContaining(expectedPlugins))
   })
@@ -47,6 +48,21 @@ describe('Check Import-Plugin rules', () => {
 
   it('There are 0 rules configured', () => {
     expect(configRulesName.length).toBe(0)
+  })
+
+  configRulesName.forEach((rule) => {
+    it(`Rule "${rule}" exists`, () => {
+      expect(originalRulesName).toContain(rule)
+    })
+  })
+})
+
+describe('Check Import-Helpers-Plugin rules', () => {
+  const originalRulesName = Object.keys(importHelpersRulesOriginal).map((rule) => `import-helpers/${rule}`)
+  const configRulesName = Object.keys(configFile.rules).filter((key) => key.match(/^import-helpers\//))
+
+  it('There are 1 rule configured', () => {
+    expect(configRulesName.length).toBe(1)
   })
 
   configRulesName.forEach((rule) => {

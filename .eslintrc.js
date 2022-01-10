@@ -6,4 +6,7 @@ module.exports = {
     es6: true,
   },
   extends: './standard',
+  rules: {
+    'import-helpers/order-imports': 'off',
+  },
 }

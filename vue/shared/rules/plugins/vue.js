@@ -45,6 +45,9 @@ module.exports = {
     avoidEscape: false,
   }],
 
+  // https://eslint.vuejs.org/rules/multi-word-component-names.html
+  'multi-word-component-names': 'off',
+
   // https://eslint.vuejs.org/rules/mustache-interpolation-spacing.html
   'mustache-interpolation-spacing': ['error', 'always'],
 

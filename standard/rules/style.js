@@ -326,7 +326,7 @@ module.exports = {
   'no-ternary': 'off',
 
   // https://eslint.org/docs/rules/no-trailing-spaces
-  'no-trailing-spaces': ['error', {
+  'no-trailing-spaces': ['warn', {
     skipBlankLines: false,
     ignoreComments: false,
   }],

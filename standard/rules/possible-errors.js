@@ -21,7 +21,13 @@ module.exports = {
   'no-cond-assign': ['error', 'always'],
 
   // https://eslint.org/docs/rules/no-console
-  'no-console': 'warn',
+  'no-console': ['warn', {
+    allow: [
+      'info',
+      'warn',
+      'error',
+    ],
+  }],
 
   // https://eslint.org/docs/rules/no-constant-condition
   'no-constant-condition': ['error', {

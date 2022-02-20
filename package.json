@@ -24,7 +24,7 @@
     "url": "https://github.com/juliolmuller/eslint-config/issues"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=12"
   },
   "main": "standard/index.js",
   "scripts": {

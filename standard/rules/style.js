@@ -349,7 +349,7 @@ module.exports = {
   'nonblock-statement-body-position': ['error', 'beside', { overrides: {} }],
 
   // https://eslint.org/docs/rules/object-curly-spacing
-  'object-curly-spacing': ['error', 'always'],
+  'object-curly-spacing': ['warn', 'always'],
 
   // https://eslint.org/docs/rules/object-curly-newline
   'object-curly-newline': 'off',

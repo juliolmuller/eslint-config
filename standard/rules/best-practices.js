@@ -248,7 +248,7 @@ module.exports = {
   }],
 
   // https://eslint.org/docs/rules/no-unused-labels
-  'no-unused-labels': 'error',
+  'no-unused-labels': 'warn',
 
   // https://eslint.org/docs/rules/no-useless-call
   'no-useless-call': 'error',

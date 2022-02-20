@@ -43,7 +43,7 @@ module.exports = {
   }],
 
   // https://eslint.org/docs/rules/comma-dangle
-  'comma-dangle': ['error', {
+  'comma-dangle': ['warn', {
     arrays: 'always-multiline',
     objects: 'always-multiline',
     imports: 'always-multiline',

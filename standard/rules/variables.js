@@ -28,7 +28,7 @@ module.exports = {
   'no-undefined': 'off',
 
   // https://eslint.org/docs/rules/no-unused-vars
-  'no-unused-vars': ['error', {
+  'no-unused-vars': ['warn', {
     vars: 'all',
     args: 'after-used',
     ignoreRestSiblings: true,

@@ -72,7 +72,7 @@ module.exports = {
   'no-var': 'error',
 
   // https://eslint.org/docs/rules/object-shorthand
-  'object-shorthand': ['error', 'always', {
+  'object-shorthand': ['warn', 'always', {
     ignoreConstructors: false,
     avoidQuotes: true,
   }],

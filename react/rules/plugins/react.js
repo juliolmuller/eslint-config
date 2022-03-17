@@ -34,7 +34,7 @@ module.exports = {
   'jsx-equals-spacing': ['error', 'never'],
 
   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
-  'jsx-indent': ['error', 2, {
+  'jsx-indent': ['warn', 2, {
     checkAttributes: true,
     indentLogicalExpressions: true,
   }],

@@ -1,6 +1,6 @@
 module.exports = {
   // https://github.com/Intellicode/eslint-plugin-react-native/blob/master/docs/rules/no-color-literals.md
-  'no-color-literals': 'off',
+  'no-color-literals': 'warn',
 
   // https://github.com/Intellicode/eslint-plugin-react-native/blob/master/docs/rules/no-inline-styles.md
   'no-inline-styles': 'off',

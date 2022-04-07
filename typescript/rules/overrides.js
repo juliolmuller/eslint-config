@@ -1,5 +1,9 @@
 module.exports = {
 
+  // Delegated to @typescript-eslint/brace-style
+  // https://eslint.org/docs/rules/brace-style
+  'brace-style': 'off',
+
   // Delegated to @typescript-eslint/indent
   // https://eslint.org/docs/rules/indent
   'indent': 'off',

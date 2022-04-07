@@ -1,6 +1,9 @@
 module.exports = {
   // TODO: review all rules
 
+  // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
+  'brace-style': require('../../../standard/rules')['brace-style'],
+
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
   'explicit-module-boundary-types': 'off',
 

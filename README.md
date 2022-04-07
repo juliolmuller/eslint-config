@@ -16,6 +16,8 @@ This package provides LacuSoft's base linting configurations for ESlint, in Java
 
 ```bash
 $ npm install -D eslint eslint-config-lacussoft
+  # or
+$ yarn add -D eslint eslint-config-lacussoft
 ```
 
 ## Standard preset

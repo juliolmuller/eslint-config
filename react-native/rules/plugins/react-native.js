@@ -11,7 +11,7 @@ module.exports = {
   }],
 
   // https://github.com/Intellicode/eslint-plugin-react-native/blob/master/docs/rules/no-single-element-style-arrays.md
-  'no-single-element-style-arrays': 'error',
+  'no-single-element-style-arrays': 'off',
 
   // https://github.com/Intellicode/eslint-plugin-react-native/blob/master/docs/rules/no-unused-styles.md
   'no-unused-styles': 'warn',

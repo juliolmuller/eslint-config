@@ -59,7 +59,7 @@ module.exports = {
   'no-useless-computed-key': 'error',
 
   // https://eslint.org/docs/rules/no-useless-constructor
-  'no-useless-constructor': 'error',
+  'no-useless-constructor': 'warn',
 
   // https://eslint.org/docs/rules/no-useless-rename
   'no-useless-rename': ['warn', {

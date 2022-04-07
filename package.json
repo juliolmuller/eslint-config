@@ -31,7 +31,8 @@
     "prepare": "husky install",
     "prepublishOnly": "npm test",
     "test": "jest --bail",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix",
+    "commit": "git-cz"
   },
   "peerDependencies": {
     "eslint": ">=7.15.0 || >=8.0.0",
@@ -40,6 +41,8 @@
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.12.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",

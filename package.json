@@ -28,8 +28,10 @@
   },
   "main": "standard/index.js",
   "scripts": {
+    "prepare": "husky install",
     "prepublishOnly": "npm test",
-    "test": "jest --bail"
+    "test": "jest --bail",
+    "lint": "eslint --fix"
   },
   "peerDependencies": {
     "eslint": ">=7.15.0 || >=8.0.0",
@@ -37,7 +39,9 @@
   },
   "devDependencies": {
     "eslint": "^8.12.0",
+    "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
     "typescript": "^4.6.3"
   },
   "dependencies": {

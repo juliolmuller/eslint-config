@@ -18,8 +18,8 @@ module.exports = {
   'block-spacing': ['error', 'always'],
 
   // https://eslint.org/docs/rules/brace-style
-  'brace-style': ['error', '1tbs', {
-    allowSingleLine: true,
+  'brace-style': ['warn', '1tbs', {
+    allowSingleLine: false,
   }],
 
   // https://eslint.org/docs/rules/camelcase

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lacussoft",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Base ESLint configuration for JavaScript, TypeScript, React, React Native & Vue projects, by LacusSoft",
   "license": "MIT",
   "keywords": [
@@ -39,14 +39,14 @@
     "jest": "^27.5.1"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.12.0",
-    "@typescript-eslint/parser": "^5.12.0",
-    "eslint-plugin-import": "^2.25.4",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-import-helpers": "^1.2.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-react-native": "^3.11.0",
-    "eslint-plugin-vue": "^8.4.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "eslint-plugin-vue": "^8.6.0",
     "require-context": "^1.1.0"
   }
 }

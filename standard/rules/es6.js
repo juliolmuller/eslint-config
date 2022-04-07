@@ -62,7 +62,7 @@ module.exports = {
   'no-useless-constructor': 'error',
 
   // https://eslint.org/docs/rules/no-useless-rename
-  'no-useless-rename': ['error', {
+  'no-useless-rename': ['warn', {
     ignoreDestructuring: false,
     ignoreImport: false,
     ignoreExport: false,

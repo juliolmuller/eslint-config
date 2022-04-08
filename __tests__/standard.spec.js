@@ -11,8 +11,8 @@ describe('Check overall configuration', () => {
     expect(configFile.extends).toContain('eslint:recommended')
   })
 
-  it('It configures ECMA version as 2018', () => {
-    expect(configFile.parserOptions.ecmaVersion).toBe(2018)
+  it('It configures ECMA version as 2021', () => {
+    expect(configFile.parserOptions.ecmaVersion).toBe(2021)
   })
 
   it('It does not configure a parser', () => {

@@ -5,7 +5,7 @@ module.exports = {
     'eslint:recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2021,
   },
   plugins: [
     'import', // https://github.com/benmosher/eslint-plugin-import

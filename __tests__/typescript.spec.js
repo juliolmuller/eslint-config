@@ -27,8 +27,8 @@ describe('Check ESlint rules', () => {
   const originalRulesName = Array.from(eslintRulesOriginal.keys())
   const configRulesName = Object.keys(configFile.rules).filter((key) => !key.match(/\//))
 
-  it('There are 8 rules being overridden', () => {
-    expect(configRulesName.length).toBe(8)
+  it('There are 9 rules being overridden', () => {
+    expect(configRulesName.length).toBe(9)
   })
 
   configRulesName.forEach((rule) => {
@@ -42,8 +42,8 @@ describe('Check TypeScript rules', () => {
   const originalRulesName = Object.keys(tsRulesOriginal).map((rule) => `@typescript-eslint/${rule}`)
   const configRulesName = Object.keys(configFile.rules).filter((key) => key.match(/^@typescript-eslint\//))
 
-  it('There are 11 rules configured', () => {
-    expect(configRulesName.length).toBe(11)
+  it('There are 12 rules configured', () => {
+    expect(configRulesName.length).toBe(12)
   })
 
   configRulesName.forEach((rule) => {

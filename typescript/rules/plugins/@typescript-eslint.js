@@ -37,6 +37,16 @@ module.exports = {
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-semi.md
   'no-extra-semi': require('../../../standard/rules')['no-extra-semi'],
 
+  // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
+  'no-shadow': [
+    require('../../../standard/rules')['no-shadow'][0],
+    {
+      ...require('../../../standard/rules')['no-shadow'][1],
+      ignoreFunctionTypeParameterNameValueShadow: true,
+      ignoreTypeValueShadow: false,
+    },
+  ],
+
   // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
   'no-unused-vars': require('../../../standard/rules')['no-unused-vars'],
 

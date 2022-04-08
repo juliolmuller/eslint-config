@@ -20,6 +20,10 @@ module.exports = {
   // https://eslint.org/docs/rules/no-extra-semi
   'no-extra-semi': 'off',
 
+  // Delegated to @typescript-eslint/no-shadow
+  // https://eslint.org/docs/rules/no-shadow
+  'no-shadow': 'off',
+
   // Delegated to @typescript-eslint/no-unused-vars
   // https://eslint.org/docs/rules/no-unused-vars
   'no-unused-vars': 'off',

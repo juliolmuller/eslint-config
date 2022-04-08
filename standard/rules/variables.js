@@ -13,7 +13,12 @@ module.exports = {
   'no-restricted-globals': ['error', 'isFinite'],
 
   // https://eslint.org/docs/rules/no-shadow
-  'no-shadow': 'error',
+  'no-shadow': ['warn', {
+    allow: [],
+    builtinGlobals: true,
+    hoist: 'functions',
+    ignoreOnInitialization: false,
+  }],
 
   // https://eslint.org/docs/rules/no-shadow-restricted-names
   'no-shadow-restricted-names': 'error',
